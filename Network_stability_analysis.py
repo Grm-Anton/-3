@@ -164,7 +164,7 @@ def fast_targeted_order(graph): # Эффективный алгоритм цел
 def analyze_algorithms():
     sizes = range(10, 1000, 10)
     m = 5
-    naive_times = []
+    native_times = []
     fast_times = []
 
     for n in sizes:
@@ -172,7 +172,7 @@ def analyze_algorithms():
 
         start = time.time()
         _ = targeted_order(graph)
-        naive_times.append(time.time() - start)
+        native_times.append(time.time() - start)
 
         start = time.time()
         _ = fast_targeted_order(graph)
