@@ -177,3 +177,4 @@ def analyze_algorithms():
         start = time.time()
         _ = fast_targeted_order(graph)
         fast_times.append(time.time() - start)
+    return [sizes, native_times, fast_times]
